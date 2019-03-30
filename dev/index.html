@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
-        <title>Pooch v0.3.1</title>
+        <title>Pooch dev</title>
     
 
 
@@ -71,7 +71,7 @@
             
             
               <div class="version">
-                v0.3.1
+                dev
               </div>
             
           
@@ -200,13 +200,13 @@
 </div><p>🚨🚨 <strong>Python 2.7 will only be supported until the Fall of 2019.</strong> 🚨🚨</p>
 <div class="section" id="tl-dr">
 <h1>TL;DR<a class="headerlink" href="#tl-dr" title="Permalink to this headline">¶</a></h1>
-<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Module mypackage/datasets.py</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="kn">import</span> <span class="nn">pooch</span>
 
 <span class="c1"># Get the version string from your project. You have one of these, right?</span>
-<span class="kn">from</span> <span class="nn">.</span> <span class="k">import</span> <span class="n">version</span>
+<span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">version</span>
 
 
 <span class="c1"># Create a new friend to manage your sample data storage</span>
@@ -216,7 +216,7 @@
     <span class="n">path</span><span class="o">=</span><span class="n">pooch</span><span class="o">.</span><span class="n">os_cache</span><span class="p">(</span><span class="s2">&quot;mypackage&quot;</span><span class="p">),</span>
     <span class="c1"># Base URL of the remote data store. Will call .format on this string to insert</span>
     <span class="c1"># the version (see below).</span>
-    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://github.com/myproject/mypackage/raw/</span><span class="si">{version}</span><span class="s2">/data/&quot;</span><span class="p">,</span>
+    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://github.com/myproject/mypackage/raw/{version}/data/&quot;</span><span class="p">,</span>
     <span class="c1"># Pooches are versioned so that you can use multiple versions of a package</span>
     <span class="c1"># simultaneously. Use PEP440 compliant version number. The version will be</span>
     <span class="c1"># appended to the path.</span>
@@ -260,32 +260,32 @@ Are they getting too big?</em></p>
 <p>Pooch will manage downloading your sample data files over HTTP from a server and storing
 them in a local directory:</p>
 <ul class="simple">
-<li>Download a file only if it’s not in the local storage.</li>
-<li>Check the SHA256 hash to make sure the file is not corrupted or needs updating.</li>
-<li>If the hash is different from the registry, Pooch will download a new version of the
-file.</li>
-<li>If the hash still doesn’t match, Pooch will raise an exception warning of possible
-data corruption.</li>
+<li><p>Download a file only if it’s not in the local storage.</p></li>
+<li><p>Check the SHA256 hash to make sure the file is not corrupted or needs updating.</p></li>
+<li><p>If the hash is different from the registry, Pooch will download a new version of the
+file.</p></li>
+<li><p>If the hash still doesn’t match, Pooch will raise an exception warning of possible
+data corruption.</p></li>
 </ul>
 </div>
 <div class="section" id="projects-using-pooch">
 <h1>Projects using Pooch<a class="headerlink" href="#projects-using-pooch" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/Unidata/MetPy">MetPy</a></li>
-<li><a class="reference external" href="https://github.com/fatiando/verde">Verde</a></li>
-<li><a class="reference external" href="https://github.com/fatiando/harmonica">Harmonica</a></li>
-<li><a class="reference external" href="https://github.com/fatiando/rockhound">RockHound</a></li>
+<li><p><a class="reference external" href="https://github.com/Unidata/MetPy">MetPy</a></p></li>
+<li><p><a class="reference external" href="https://github.com/fatiando/verde">Verde</a></p></li>
+<li><p><a class="reference external" href="https://github.com/fatiando/harmonica">Harmonica</a></p></li>
+<li><p><a class="reference external" href="https://github.com/fatiando/rockhound">RockHound</a></p></li>
 </ul>
 <p><em>If you’re using Pooch, send us a pull request adding your project to the list.</em></p>
 </div>
 <div class="section" id="contacting-us">
 <h1>Contacting Us<a class="headerlink" href="#contacting-us" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>Most discussion happens <a class="reference external" href="https://github.com/fatiando/pooch">on Github</a>.
+<li><p>Most discussion happens <a class="reference external" href="https://github.com/fatiando/pooch">on Github</a>.
 Feel free to <a class="reference external" href="https://github.com/fatiando/pooch/issues/new">open an issue</a> or comment
-on any open issue or pull request.</li>
-<li>We have <a class="reference external" href="https://gitter.im/fatiando/fatiando">chat room on Gitter</a> where you can
-ask questions and leave comments.</li>
+on any open issue or pull request.</p></li>
+<li><p>We have <a class="reference external" href="https://gitter.im/fatiando/fatiando">chat room on Gitter</a> where you can
+ask questions and leave comments.</p></li>
 </ul>
 </div>
 <div class="section" id="contributing">
@@ -334,15 +334,15 @@ of the <strong>BSD 3-clause License</strong>. A copy of this license is provided
 <div class="section" id="documentation-for-other-versions">
 <h1>Documentation for other versions<a class="headerlink" href="#documentation-for-other-versions" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference external" href="https://www.fatiando.org/pooch/dev">Development</a> (reflects the <em>master</em> branch on
-Github)</li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/latest">Latest release</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.3.1">v0.3.1</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.3.0">v0.3.0</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.2.1">v0.2.1</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.2.0">v0.2.0</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.1.1">v0.1.1</a></li>
-<li><a class="reference external" href="https://www.fatiando.org/pooch/v0.1">v0.1</a></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/dev">Development</a> (reflects the <em>master</em> branch on
+Github)</p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/latest">Latest release</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.3.1">v0.3.1</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.3.0">v0.3.0</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.2.1">v0.2.1</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.2.0">v0.2.0</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.1.1">v0.1.1</a></p></li>
+<li><p><a class="reference external" href="https://www.fatiando.org/pooch/v0.1">v0.1</a></p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
@@ -368,7 +368,7 @@ Github)</li>
     <p>
         &copy; Copyright 2018-2019, The Pooch Developers
       <span class="lastupdated">
-        Last updated on Mar 29, 2019.
+        Last updated on Mar 30, 2019.
       </span>
 
     </p>

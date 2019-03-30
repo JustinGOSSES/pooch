@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
-    <title>Changelog &mdash; Pooch v0.3.1</title>
+    <title>Changelog &mdash; Pooch dev</title>
     
 
 
@@ -71,7 +71,7 @@
             
             
               <div class="version">
-                v0.3.1
+                dev
               </div>
             
           
@@ -208,9 +208,9 @@
 <p><em>Released on: 2019/03/28</em></p>
 <p>Minor patches:</p>
 <ul class="simple">
-<li>Add a project logo (<a class="reference external" href="https://github.com/fatiando/pooch/pull/57">#57</a>)</li>
-<li>Replace <code class="docutils literal notranslate"><span class="pre">http</span></code> with <code class="docutils literal notranslate"><span class="pre">https</span></code> in the <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> to avoid mixed content warnings
-in some browsers (<a class="reference external" href="https://github.com/fatiando/pooch/pull/56">#56</a>)</li>
+<li><p>Add a project logo (<a class="reference external" href="https://github.com/fatiando/pooch/pull/57">#57</a>)</p></li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">http</span></code> with <code class="docutils literal notranslate"><span class="pre">https</span></code> in the <code class="docutils literal notranslate"><span class="pre">README.rst</span></code> to avoid mixed content warnings
+in some browsers (<a class="reference external" href="https://github.com/fatiando/pooch/pull/56">#56</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="version-0-3-0">
@@ -218,29 +218,29 @@ in some browsers (<a class="reference external" href="https://github.com/fatiand
 <p><em>Released on: 2019/03/27</em></p>
 <p>New features:</p>
 <ul class="simple">
-<li>Use the <code class="docutils literal notranslate"><span class="pre">appdirs</span></code> library to get the cache directory. <strong>Could change the default
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">appdirs</span></code> library to get the cache directory. <strong>Could change the default
 data location on all platforms</strong>. Locations are compatible with the
 <a class="reference external" href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG Base Directory Specification</a>
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/45">#45</a>)</li>
-<li>Add method <code class="docutils literal notranslate"><span class="pre">Pooch.is_available</span></code> to check remote file availability
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/50">#50</a>)</li>
-<li>Add <code class="docutils literal notranslate"><span class="pre">Pooch.registry_files</span></code> property to get a name of all files in the registry
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/42">#42</a>)</li>
-<li>Make <code class="docutils literal notranslate"><span class="pre">Pooch.get_url</span></code> a public method to get the download URL for a given file
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/55">#55</a>)</li>
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/45">#45</a>)</p></li>
+<li><p>Add method <code class="docutils literal notranslate"><span class="pre">Pooch.is_available</span></code> to check remote file availability
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/50">#50</a>)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">Pooch.registry_files</span></code> property to get a name of all files in the registry
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/42">#42</a>)</p></li>
+<li><p>Make <code class="docutils literal notranslate"><span class="pre">Pooch.get_url</span></code> a public method to get the download URL for a given file
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/55">#55</a>)</p></li>
 </ul>
 <p>Maintenance:</p>
 <ul class="simple">
-<li><strong>Drop support for Python 3.5</strong>. Pooch now requires Python &gt;= 3.6.
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/52">#52</a>)</li>
-<li>Add a private method to check if a file is in the registry (<a class="reference external" href="https://github.com/fatiando/pooch/pull/49">#49</a>)</li>
-<li>Fix typo in the <code class="docutils literal notranslate"><span class="pre">Pooch.load_registry</span></code> docstring (<a class="reference external" href="https://github.com/fatiando/pooch/pull/41">#41</a>)</li>
+<li><p><strong>Drop support for Python 3.5</strong>. Pooch now requires Python &gt;= 3.6.
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/52">#52</a>)</p></li>
+<li><p>Add a private method to check if a file is in the registry (<a class="reference external" href="https://github.com/fatiando/pooch/pull/49">#49</a>)</p></li>
+<li><p>Fix typo in the <code class="docutils literal notranslate"><span class="pre">Pooch.load_registry</span></code> docstring (<a class="reference external" href="https://github.com/fatiando/pooch/pull/41">#41</a>)</p></li>
 </ul>
 <p>This release contains contributions from:</p>
 <ul class="simple">
-<li>Santiago Soler</li>
-<li>Rémi Rampin</li>
-<li>Leonardo Uieda</li>
+<li><p>Santiago Soler</p></li>
+<li><p>Rémi Rampin</p></li>
+<li><p>Leonardo Uieda</p></li>
 </ul>
 </div>
 <div class="section" id="version-0-2-1">
@@ -248,8 +248,8 @@ data location on all platforms</strong>. Locations are compatible with the
 <p><em>Released on: 2018/11/15</em></p>
 <p>Bug fixes:</p>
 <ul class="simple">
-<li>Fix unwanted <code class="docutils literal notranslate"><span class="pre">~</span></code> directory creation when not using a <code class="docutils literal notranslate"><span class="pre">version</span></code> in <code class="docutils literal notranslate"><span class="pre">pooch.create</span></code>
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/37">#37</a>)</li>
+<li><p>Fix unwanted <code class="docutils literal notranslate"><span class="pre">~</span></code> directory creation when not using a <code class="docutils literal notranslate"><span class="pre">version</span></code> in <code class="docutils literal notranslate"><span class="pre">pooch.create</span></code>
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/37">#37</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="version-0-2-0">
@@ -257,18 +257,18 @@ data location on all platforms</strong>. Locations are compatible with the
 <p><em>Released on: 2018/10/31</em></p>
 <p>Bug fixes:</p>
 <ul class="simple">
-<li>Avoid copying of files across the file system (<a class="reference external" href="https://github.com/fatiando/pooch/pull/33">#33</a>)</li>
-<li>Correctly delete temporary downloads on error (<a class="reference external" href="https://github.com/fatiando/pooch/pull/32">#32</a>)</li>
+<li><p>Avoid copying of files across the file system (<a class="reference external" href="https://github.com/fatiando/pooch/pull/33">#33</a>)</p></li>
+<li><p>Correctly delete temporary downloads on error (<a class="reference external" href="https://github.com/fatiando/pooch/pull/32">#32</a>)</p></li>
 </ul>
 <p>New features:</p>
 <ul class="simple">
-<li>Allow custom download URLs for individual files (<a class="reference external" href="https://github.com/fatiando/pooch/pull/30">#30</a>)</li>
-<li>Allow dataset versioning to be optional (<a class="reference external" href="https://github.com/fatiando/pooch/pull/29">#29</a>)</li>
+<li><p>Allow custom download URLs for individual files (<a class="reference external" href="https://github.com/fatiando/pooch/pull/30">#30</a>)</p></li>
+<li><p>Allow dataset versioning to be optional (<a class="reference external" href="https://github.com/fatiando/pooch/pull/29">#29</a>)</p></li>
 </ul>
 <p>Maintenance:</p>
 <ul class="simple">
-<li>Move URLs building to a dedicated method for easy subclassing (<a class="reference external" href="https://github.com/fatiando/pooch/pull/31">#31</a>)</li>
-<li>Add testing and support for Python 3.7 (<a class="reference external" href="https://github.com/fatiando/pooch/pull/25">#25</a>)</li>
+<li><p>Move URLs building to a dedicated method for easy subclassing (<a class="reference external" href="https://github.com/fatiando/pooch/pull/31">#31</a>)</p></li>
+<li><p>Add testing and support for Python 3.7 (<a class="reference external" href="https://github.com/fatiando/pooch/pull/25">#25</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="version-0-1-1">
@@ -276,22 +276,23 @@ data location on all platforms</strong>. Locations are compatible with the
 <p><em>Released on: 2018/08/30</em></p>
 <p>Bug fixes:</p>
 <ul class="simple">
-<li>Check if the local data folder is writable and warn the user instead of crashing
-(<a class="reference external" href="https://github.com/fatiando/pooch/pull/23">#23</a>)</li>
+<li><p>Check if the local data folder is writable and warn the user instead of crashing
+(<a class="reference external" href="https://github.com/fatiando/pooch/pull/23">#23</a>)</p></li>
 </ul>
 </div>
 <div class="section" id="version-0-1">
 <h2>Version 0.1<a class="headerlink" href="#version-0-1" title="Permalink to this headline">¶</a></h2>
 <p><em>Released on: 2018/08/20</em></p>
 <ul class="simple">
-<li>Fist release of Pooch. Manages downloading sample data files over HTTP from a server
-and storing them in a local directory. Main features:<ul>
-<li>Download a file only if it’s not in the local storage.</li>
-<li>Check the SHA256 hash to make sure the file is not corrupted or needs updating.</li>
-<li>If the hash is different from the registry, Pooch will download a new version of
-the file.</li>
-<li>If the hash still doesn’t match, Pooch will raise an exception warning of possible
-data corruption.</li>
+<li><p>Fist release of Pooch. Manages downloading sample data files over HTTP from a server
+and storing them in a local directory. Main features:</p>
+<ul>
+<li><p>Download a file only if it’s not in the local storage.</p></li>
+<li><p>Check the SHA256 hash to make sure the file is not corrupted or needs updating.</p></li>
+<li><p>If the hash is different from the registry, Pooch will download a new version of
+the file.</p></li>
+<li><p>If the hash still doesn’t match, Pooch will raise an exception warning of possible
+data corruption.</p></li>
 </ul>
 </li>
 </ul>
@@ -318,7 +319,7 @@ data corruption.</li>
     <p>
         &copy; Copyright 2018-2019, The Pooch Developers
       <span class="lastupdated">
-        Last updated on Mar 29, 2019.
+        Last updated on Mar 30, 2019.
       </span>
 
     </p>

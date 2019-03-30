@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     
-    <title>pooch.Pooch &mdash; Pooch v0.3.1</title>
+    <title>pooch.Pooch &mdash; Pooch dev</title>
     
 
 
@@ -72,7 +72,7 @@
             
             
               <div class="version">
-                v0.3.1
+                dev
               </div>
             
           
@@ -216,64 +216,54 @@
 <dt id="pooch.Pooch">
 <em class="property">class </em><code class="descclassname">pooch.</code><code class="descname">Pooch</code><span class="sig-paren">(</span><em>path</em>, <em>base_url</em>, <em>registry=None</em>, <em>urls=None</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pooch/core.html#Pooch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pooch.Pooch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Manager for a local data storage that can fetch from a remote source.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
-<dt><strong>path</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">The path to the local data storage folder. The path must exist in the file
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>path</strong><span class="classifier">str</span></dt><dd><p>The path to the local data storage folder. The path must exist in the file
 system.</p>
 </dd>
-<dt><strong>base_url</strong> <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
-<dd><p class="first last">Base URL for the remote data source. All requests will be made relative to this
+<dt><strong>base_url</strong><span class="classifier">str</span></dt><dd><p>Base URL for the remote data source. All requests will be made relative to this
 URL.</p>
 </dd>
-<dt><strong>registry</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict or None</span></dt>
-<dd><p class="first last">A record of the files that are managed by this good boy. Keys should be the file
+<dt><strong>registry</strong><span class="classifier">dict or None</span></dt><dd><p>A record of the files that are managed by this good boy. Keys should be the file
 names and the values should be their SHA256 hashes. Only files in the registry
 can be fetched from the local storage. Files in subdirectories of <em>path</em> <strong>must
 use Unix-style separators</strong> (<code class="docutils literal notranslate"><span class="pre">'/'</span></code>) even on Windows.</p>
 </dd>
-<dt><strong>urls</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict or None</span></dt>
-<dd><p class="first last">Custom URLs for downloading individual files in the registry. A dictionary with
+<dt><strong>urls</strong><span class="classifier">dict or None</span></dt><dd><p>Custom URLs for downloading individual files in the registry. A dictionary with
 the file names as keys and the custom URLs as values. Not all files in
 <em>registry</em> need an entry in <em>urls</em>. If a file has an entry in <em>urls</em>, the
 <em>base_url</em> will be ignored when downloading it in favor of <code class="docutils literal notranslate"><span class="pre">urls[fname]</span></code>.</p>
 </dd>
 </dl>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">abspath</span></code></dt>
-<dd><p class="first last">Absolute path to the local storage</p>
 </dd>
-<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">registry_files</span></code></dt>
-<dd><p class="first last">List of file names on the registry</p>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">abspath</span></code></dt><dd><p>Absolute path to the local storage</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">registry_files</span></code></dt><dd><p>List of file names on the registry</p>
 </dd>
 </dl>
-</td>
-</tr>
-</tbody>
-</table>
+</dd>
+</dl>
 <p class="rubric">Methods</p>
-<table border="1" class="longtable docutils">
+<table class="longtable docutils align-center">
 <colgroup>
-<col width="10%" />
-<col width="90%" />
+<col style="width: 10%" />
+<col style="width: 90%" />
 </colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="pooch.Pooch.fetch.html#pooch.Pooch.fetch" title="pooch.Pooch.fetch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch</span></code></a>(fname)</td>
-<td>Get the absolute path to a file in the local storage.</td>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="pooch.Pooch.fetch.html#pooch.Pooch.fetch" title="pooch.Pooch.fetch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fetch</span></code></a>(fname)</p></td>
+<td><p>Get the absolute path to a file in the local storage.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pooch.Pooch.get_url.html#pooch.Pooch.get_url" title="pooch.Pooch.get_url"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_url</span></code></a>(fname)</td>
-<td>Get the full URL to download a file in the registry.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="pooch.Pooch.get_url.html#pooch.Pooch.get_url" title="pooch.Pooch.get_url"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_url</span></code></a>(fname)</p></td>
+<td><p>Get the full URL to download a file in the registry.</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="pooch.Pooch.is_available.html#pooch.Pooch.is_available" title="pooch.Pooch.is_available"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_available</span></code></a>(fname)</td>
-<td>Check availability of a remote file without downloading it.</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="pooch.Pooch.is_available.html#pooch.Pooch.is_available" title="pooch.Pooch.is_available"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_available</span></code></a>(fname)</p></td>
+<td><p>Check availability of a remote file without downloading it.</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="pooch.Pooch.load_registry.html#pooch.Pooch.load_registry" title="pooch.Pooch.load_registry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_registry</span></code></a>(fname)</td>
-<td>Load entries from a file and add them to the registry.</td>
+<tr class="row-even"><td><p><a class="reference internal" href="pooch.Pooch.load_registry.html#pooch.Pooch.load_registry" title="pooch.Pooch.load_registry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_registry</span></code></a>(fname)</p></td>
+<td><p>Load entries from a file and add them to the registry.</p></td>
 </tr>
 </tbody>
 </table>
@@ -303,7 +293,7 @@ the file names as keys and the custom URLs as values. Not all files in
     <p>
         &copy; Copyright 2018-2019, The Pooch Developers
       <span class="lastupdated">
-        Last updated on Mar 29, 2019.
+        Last updated on Mar 30, 2019.
       </span>
 
     </p>
